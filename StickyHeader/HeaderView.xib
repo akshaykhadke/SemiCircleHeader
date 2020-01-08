@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StickyHeaderViewController" customModule="StickyHeader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UzL-7u-Ncz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="BYO-iq-PXJ">
+                            <rect key="frame" x="286" y="0.0" width="236" height="132"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="132" id="MFS-mA-wdd"/>
+                                <constraint firstAttribute="width" constant="236" id="aoa-hv-0AY"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="hSI-Sz-hog"/>
+                        <constraint firstItem="BYO-iq-PXJ" firstAttribute="top" secondItem="UzL-7u-Ncz" secondAttribute="top" id="hUg-cF-Fbe"/>
+                        <constraint firstAttribute="trailing" secondItem="BYO-iq-PXJ" secondAttribute="trailing" constant="-108" id="rDP-pk-yJU"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="expansionMode">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maximumContentHeight">
+                            <real key="value" value="64"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="minimumContentHeight">
+                            <real key="value" value="280"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrk-a4-hnm">
+                    <rect key="frame" x="49.5" y="119" width="315" height="68"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="315" id="Edp-Aw-Lfx"/>
+                        <constraint firstAttribute="height" constant="68" id="iwL-8K-aum"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Whm-nQ-ugj">
+                    <rect key="frame" x="0.0" y="202" width="414" height="30"/>
+                    <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="hY5-rw-FM1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXP-ga-TEu">
+                    <rect key="frame" x="0.0" y="242" width="414" height="30"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="gzw-OO-FLV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vXP-ga-TEu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0Wl-u9-2FN"/>
+                <constraint firstItem="yrk-a4-hnm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2ky-MX-Flz"/>
+                <constraint firstItem="UzL-7u-Ncz" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="8bm-IW-R4A"/>
+                <constraint firstItem="Whm-nQ-ugj" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="DBg-S4-39u"/>
+                <constraint firstItem="UzL-7u-Ncz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FIY-qJ-TnQ"/>
+                <constraint firstItem="UzL-7u-Ncz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YEq-c7-WFx"/>
+                <constraint firstItem="vXP-ga-TEu" firstAttribute="top" secondItem="Whm-nQ-ugj" secondAttribute="bottom" constant="10" id="cbI-VP-Da6"/>
+                <constraint firstItem="yrk-a4-hnm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="75" id="epb-5R-k88"/>
+                <constraint firstItem="vXP-ga-TEu" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="gVj-Ua-Zt5"/>
+                <constraint firstItem="Whm-nQ-ugj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qw2-wE-W6V"/>
+                <constraint firstItem="Whm-nQ-ugj" firstAttribute="top" secondItem="yrk-a4-hnm" secondAttribute="bottom" constant="15" id="uuC-Bu-RDf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="semiCircile" destination="UzL-7u-Ncz" id="bko-rR-khV"/>
+                <outlet property="topConstraint" destination="hUg-cF-Fbe" id="USw-B3-AfO"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon" width="339" height="164"/>
+    </resources>
+</document>
